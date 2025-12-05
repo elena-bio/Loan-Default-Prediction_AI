@@ -1,0 +1,61 @@
+Found train at: /home/elena/Documents/AI Redi School/train_LZV4RXX.csv
+Auto-detected test file at: /home/elena/Documents/AI Redi School/test_4zJg83n.csv
+
+Loading CSV files...
+Train shape: (7000, 10)
+Test  shape: (3000, 9)
+
+=== Cleaning ===
+Dropped 0 duplicate rows.
+Saved cleaned file: cleaned_loan_data_final.csv
+
+=== Feature engineering ===
+Feature engineering done. New sample columns: ['loan_to_asset', 'loan_amount_log', 'asset_cost_log', 'loans_ratio']
+
+=== EDA & Visualizations ===
+Saved plots/hist_age.png
+Saved plots/hist_loan_amount.png
+Saved plots/hist_asset_cost.png
+Saved plots/hist_loan_amount_log.png
+Saved plots/hist_loan_to_asset.png
+Saved plots/count_education.png
+Saved plots/count_proof_submitted.png
+Saved plots/corr_heatmap.png
+Saved plots/box_loan_amount.png
+Saved plots/default_by_education.png
+Saved Elham_EDA_Report.md
+
+=== Prepare model-ready dataset ===
+Saved model-ready: model_ready_loan_data.csv
+
+=== Modeling ===
+Training Logistic Regression...
+LR results: {'accuracy': 0.5564285714285714, 'precision': 0.4578146611341632, 'recall': 0.5910714285714286, 'f1': 0.5159781761496492, 'roc_auc': 0.5882397959183673}
+Training Random Forest...
+RF results: {'accuracy': 0.5821428571428572, 'precision': 0.4603174603174603, 'recall': 0.25892857142857145, 'f1': 0.3314285714285714, 'roc_auc': 0.5506133078231292}
+Selected best model: lr
+
+=== Full evaluation (val set) ===
+Saved plots/cm_logistic.png
+Saved plots/cm_randomforest.png
+Saved plots/roc_comparison.png
+Saved plots/classification_report_logistic.json
+Saved plots/classification_report_randomforest.json
+Saved plots/feature_importance_rf.png and plots/feature_importances_rf.csv
+Saved plots/eval_metrics_summary.json
+Full evaluation finished.
+
+Retraining best model on full training data...
+Saved best_loan_model.joblib
+
+Preparing test features and predicting...
+Saved submission.csv with 3000 rows
+
+Pipeline finished 
+Outputs saved:
+ - cleaned file: cleaned_loan_data_final.csv
+ - model-ready: model_ready_loan_data.csv
+ - EDA report: Elham_EDA_Report.md
+ - plots: folder 'plots/'
+ - model: best_loan_model.joblib
+ - submission: submission.csv
