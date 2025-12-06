@@ -1,31 +1,32 @@
-# Loan Default Prediction Project #
+# Loan Default Prediction Project
 
-A complete end-to-end Machine Learning pipeline for predicting loan default risk using Python, Scikit-Learn, and XGBoost. 
-This repository demonstrates a full ML lifecycle, including data ingestion, cleaning, EDA, feature engineering, model training, evaluation, and final prediction output. 
+[![Streamlit App]([![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://elena-loan-app.streamlit.app))
 
-## Project Overview ##
+A complete end-to-end Machine Learning pipeline for predicting loan default risk using Python, Scikit-Learn, and XGBoost. This repository demonstrates a full ML lifecycle, including data ingestion, cleaning, EDA, feature engineering, model training, evaluation, and final prediction output.
 
-Loan default prediction is a key use-case in financial risk modeling.
-The goal of this project is to:
+## 🚀 Interactive Dashboard
+I have deployed a live demo of this model using **Streamlit**. You can interact with the model, adjust features like Loan Amount, Asset Cost, and Age, and see the predicted risk probability in real-time.
 
-Build a reliable ML pipeline that can run end-to-end in one script
+👉 **[Click here to try the Live Demo](https://elena-bio-loan-default-prediction-ai-app-auf8cz.streamlit.app/)**
 
-Produce cleaned data, EDA visualizations, engineered features, trained models, and a submission file
+---
 
-Compare multiple models and select the best one based on ROC-AUC
+## Project Overview
 
-Demonstrate reproducible, professional ML workflow
+Loan default prediction is a key use-case in financial risk modeling. The goal of this project is to:
+* Build a reliable ML pipeline that can run end-to-end in one script
+* Produce cleaned data, EDA visualizations, engineered features, trained models, and a submission file
+* Compare multiple models and select the best one based on ROC-AUC
+* Demonstrate reproducible, professional ML workflow
 
-The entire pipeline is implemented in:
-```
- loan_pipeline_full.py
-```
+The entire pipeline is implemented in: `loan_pipeline_full.py`
 
-## Repository Structure ##
+## Repository Structure
 
-```
+```text
 Loan-Default-Prediction_Redi/
 │
+├── app.py                         # Streamlit Dashboard source code (NEW)
 ├── loan_pipeline_full.py          # Full automated ML pipeline
 ├── train_LZV4RXX.csv              # Training dataset
 ├── test_XXXXXX.csv                # Test dataset
@@ -33,6 +34,7 @@ Loan-Default-Prediction_Redi/
 ├── cleaned_loan_data_final.csv    # Cleaned training data
 ├── model_ready_loan_data.csv      # Final dataset used for modeling
 │
+├── best_loan_model.joblib         # Saved trained model
 ├── submission.csv                 # Final model predictions for test set
 │
 ├── plots/                         # All EDA & model evaluation outputs
@@ -43,8 +45,7 @@ Loan-Default-Prediction_Redi/
 │   ├── eval_metrics_summary.json
 │   └── ... many more
 │
-└── EDA_Report.md            # Additional EDA summary
-```
+└── EDA_Report.md                  # Additional EDA summary
  
  ## Exploratory Data Analysis (EDA) ##
 
@@ -139,10 +140,14 @@ Output file:
 submission.csv
 ```
 
-# How to Run the Pipeline #
+# How to Run  #
+
+## 1. Run the Pipeline (Train Model) ##
 ```
 python loan_pipeline_full.py
 ```
+## 2.Run the Dashboard (Local) ##
+
 # Requirements #
 ```
 pip install -r requirements.txt
