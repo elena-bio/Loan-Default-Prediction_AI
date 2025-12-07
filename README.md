@@ -41,17 +41,17 @@ Loan default prediction is a key use-case in financial risk modeling. The goal o
 Loan-Default-Prediction_Redi/
 │
 ├── app.py                         # Streamlit Dashboard source code (NEW)
-[cite_start]├── loan_pipeline_full.py          # Full automated ML pipeline [cite: 47]
-[cite_start]├── train_LZV4RXX.csv              # Training dataset [cite: 48]
-[cite_start]├── test_XXXXXX.csv                # Test dataset [cite: 51]
+[cite_start]├── loan_pipeline_full.py          # Full automated ML pipeline 
+[cite_start]├── train_LZV4RXX.csv              # Training dataset 
+[cite_start]├── test_XXXXXX.csv                # Test dataset 
 │
-[cite_start]├── cleaned_loan_data_final.csv    # Cleaned training data [cite: 59]
-[cite_start]├── model_ready_loan_data.csv      # Final dataset used for modeling [cite: 57]
+[cite_start]├── cleaned_loan_data_final.csv    # Cleaned training data 
+[cite_start]├── model_ready_loan_data.csv      # Final dataset used for modeling 
 │
-[cite_start]├── best_loan_model.joblib         # Saved trained model [cite: 123]
-[cite_start]├── submission.csv                 # Final model predictions for test set [cite: 60]
+[cite_start]├── best_loan_model.joblib         # Saved trained model 
+[cite_start]├── submission.csv                 # Final model predictions for test set 
 │
-[cite_start]├── plots/                         # All EDA & model evaluation outputs [cite: 62, 63]
+[cite_start]├── plots/                         # All EDA & model evaluation outputs
 │   ├── hist_loan_amount.png
 │   ├── corr_heatmap.png
 │   ├── cm_randomforest.png
@@ -59,7 +59,7 @@ Loan-Default-Prediction_Redi/
 │   ├── eval_metrics_summary.json
 │   └── ... many more
 │
-[cite_start]└── EDA_Report.md                  # Additional EDA summary [cite: 76]
+[cite_start]└── EDA_Report.md                  # Additional EDA summary
 ```
 ## Exploratory Data Analysis (EDA)
 
@@ -69,9 +69,9 @@ The script automatically generates visualizations including:
 * **Default rate** by Education
 * **Proof submission count**
 
-(plots available inside `/plots/`) [cite_start][cite: 85]
+(plots available inside `/plots/`) 
 
-[cite_start]**Summary file:** `Elham_EDA_Report.md` [cite: 87]
+**Summary file:** `Elham_EDA_Report.md` 
 
 
 * **Categorical Pipeline:**
