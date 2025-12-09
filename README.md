@@ -2,7 +2,7 @@
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://elena-bio-loan-default-prediction-ai-app-auf8cz.streamlit.app/)
 
-A complete end-to-end Machine Learning pipeline for predicting loan default risk using Python, Scikit-Learn, and XGBoost. This repository demonstrates a full ML lifecycle, including data ingestion, cleaning, EDA, feature engineering, model training, evaluation, and final prediction output.
+A complete end-to-end Machine Learning pipeline for predicting loan default risk using Python, Scikit-Learn, . This repository demonstrates a full ML lifecycle, including data ingestion, cleaning, EDA, feature engineering, model training, evaluation, and final prediction output.
 
 ## Table of Contents
 1. [Interactive Dashboard](#-interactive-dashboard)
