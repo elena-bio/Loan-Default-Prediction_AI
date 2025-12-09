@@ -28,12 +28,12 @@ I have deployed a live demo of this model using **Streamlit**. You can interact 
 ## Project Overview
 
 Loan default prediction is a key use-case in financial risk modeling. The goal of this project is to:
-* [cite_start]Build a reliable ML pipeline that can run end-to-end in one script[cite: 37, 38].
-* [cite_start]Produce cleaned data, EDA visualizations, engineered features, trained models, and a submission file[cite: 39].
-* [cite_start]Compare multiple models and select the best one based on ROC-AUC[cite: 40].
-* [cite_start]Demonstrate reproducible, professional ML workflow[cite: 41].
+* Build a reliable ML pipeline that can run end-to-end in one script.
+* Produce cleaned data, EDA visualizations, engineered features, trained models, and a submission file.
+* Compare multiple models and select the best one based on ROC-AUC.
+* Demonstrate reproducible, professional ML workflow.
 
-[cite_start]The entire pipeline is implemented in: `loan_pipeline_full.py`[cite: 42, 43].
+The entire pipeline is implemented in: `loan_pipeline_full.py`.
 
 ## Repository Structure
 
