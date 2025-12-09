@@ -38,7 +38,7 @@ Loan default prediction is a key use-case in financial risk modeling. The goal o
 ## Repository Structure
 
 ```text
-Loan-Default-Prediction_Redi/
+Loan-Default-Prediction_AI/
 │
 ├── app.py                         # Streamlit Dashboard source code (NEW)
 [cite_start]├── loan_pipeline_full.py          # Full automated ML pipeline 
